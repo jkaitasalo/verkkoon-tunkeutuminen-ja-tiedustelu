@@ -31,18 +31,35 @@
 
 #### a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
 
-
-
 Päätin asentaa Kalin VirtualBoxiin, sillä siinä on valmiina paljon ominaisuuksia, joiden uskon olevan hyödyllisiä kurssilla. Asennuksen yhteydessä ei ilmennyt ongelmia.
+
 
 
 #### b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 
 
+
+
 #### c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).
+
+
 
 
 #### d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Voit selityksen tueksi laatikoida ne ruutukaappauksesta.
 
 
+
+
 #### e) Mitäs tuli surffattua? Avaa [surfing-secure.pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap). Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
+
+
+
+
+## Lähteet:
+
+- https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+- https://terokarvinen.com/wireshark-getting-started/
+- https://terokarvinen.com/network-interface-linux/
+- https://www.virtualbox.org/wiki/Downloads
+- https://www.kali.org/get-kali/#kali-platforms
+- 
