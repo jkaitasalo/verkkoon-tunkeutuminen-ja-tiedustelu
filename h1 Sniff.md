@@ -28,7 +28,10 @@
 - 123
 
 
+
 #### a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
+
+
 
 Päätin asentaa Kalin VirtualBoxiin, sillä siinä on valmiina paljon ominaisuuksia, joiden uskon olevan hyödyllisiä kurssilla. Asennuksen yhteydessä ei ilmennyt ongelmia.
 
