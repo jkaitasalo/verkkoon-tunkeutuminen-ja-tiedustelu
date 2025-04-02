@@ -24,14 +24,31 @@
 
 
 2. Karvinen 2025: [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
-- 123
-- 123
+- artikkeli kertoo mitä eri merkkijonot tarkoittavat
+- nimen alku (prefix) kertoo minkä tyyppinen rajapinta on kyseessä
+
+| Prefix | Interface Type                            |
+|--------|-------------------------------------------|
+| en     | Wired Ethernet                            |
+| wl     | WLAN, wireless local area network, WiFi   |
+| lo     | Loopback adapter                          |
+
+- jokainen kone kutsuu itseään nimellä localhost
+- yleisiä nimiä:
+
+| Interface       | Explanation                                                              |
+|-----------------|--------------------------------------------------------------------------|
+| wlp4s0          | WiFi card.                                                               |
+| enp1s0          | Wired ethernet card.                                                     |
+| lo              | Loopback adapter.                                                        |
+| enx738899738899 | Wired ethernet card. The number after "x" is the MAC number of the card. |
+
 
 
 
 #### a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
 
-Päätin asentaa Kalin VirtualBoxiin, sillä siinä on valmiina paljon ominaisuuksia, joiden uskon olevan hyödyllisiä kurssilla. Asennuksen yhteydessä ei ilmennyt ongelmia.
+Päätin asentaa Kalin VirtualBoxiin, sillä siinä on valmiina paljon ominaisuuksia joiden uskon olevan hyödyllisiä kurssilla. Asennuksen yhteydessä ei ilmennyt ongelmia.
 
 
 
