@@ -43,6 +43,9 @@
 | lo              | Loopback adapter.                                                        |
 | enx738899738899 | Wired ethernet card. The number after "x" is the MAC number of the card. |
 
+- omat rajapinnat voi tarkistaa komennoilla:
+  - `ip a`
+  - `ìp route`
 
 
 
