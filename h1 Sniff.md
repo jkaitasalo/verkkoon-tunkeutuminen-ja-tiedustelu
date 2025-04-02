@@ -45,7 +45,7 @@
 
 - omat rajapinnat voi tarkistaa komennoilla:
   - `ip a`
-  - `ìp route`
+  - `ip route`
 
 
 
