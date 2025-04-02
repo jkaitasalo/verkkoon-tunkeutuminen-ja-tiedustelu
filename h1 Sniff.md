@@ -2,8 +2,30 @@
 
 
 #### x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
-- Karvinen 2025: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
-- Karvinen 2025: [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
+
+1. Karvinen 2025: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
+- työkalu "sniffaukseen" ja analysointiin
+- seuraavaksi asennusohjeet
+- käyttöliittymästä valitaan mitä halutaan haistella
+  - "any" haistelee kaiken liikenteen, joten sillä on helppo haistella "jotain"
+- hyvä käytäntö on haistella vain vähän kerrallaan, ettei joudu käymään kerralla paljon läpi
+- sniffauksen tulokset voi tallentaa, tästä luodaan tiedosto.pcap
+  - luotu kaappaus voidaan analysoida samalla tavalla kuin "normaali" sniffaus
+- kaapatusta datasta nähdään statistiikkaa "Statistics" mm.
+  - Endpoints
+  - I/O Graphs
+  - Procol hierarchy
+- dataa voi myös suodattaa erilaisilla filtereillä mm.
+  - dns
+  - tls
+  - http
+  - tcp.port == 443
+  - ip.addr == 192.168.122.7
+
+
+2. Karvinen 2025: [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
+- 123
+- 123
 
 
 #### a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
