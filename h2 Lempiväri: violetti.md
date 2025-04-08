@@ -30,11 +30,20 @@
 
 #### b) Nmapped. Porttiskannaa oma weppipalvelimesi käyttäen localhost-osoitetta ja 'nmap -A' päällä. Selitä tulokset. (Pelkkä http-portti 80/tcp riittää)
 
+- Tulokset `nmap -A 127.0.0.1` -komennon ajosta:
+
+![image](https://github.com/user-attachments/assets/5c40584b-f544-4e12-9e06-cc159a87884c)
+
+- Tuloksista voidaan nähdä, että portti 80/tcp on auki ja siellä pyörii Apache webbipalvelin 2.4.63 Debian
 
 
 #### c) Skriptit. Mitkä skriptit olivat automaattisesti päällä, kun käytit "-A" parametria? (Näkyy avoimien porttinumeroiden alta, http-blah, http-blöh...).
 
-
+- Jonkinlaisia tunnistavia skriptejä ainakin
+- Kuvankaappauksessa näkyy:
+  - Device Type: general purpose
+  - Running: Linux 2.6.X|5.X
+  - Käyttöjärjestelmän tietoja, sekä lopuksi verkon etäisyys (tässä 0 hops)
 
 #### d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
 
