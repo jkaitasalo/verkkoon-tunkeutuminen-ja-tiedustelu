@@ -4,10 +4,28 @@
 #### x) Lue ja vastaa lyhyesti kysymyksiin. Tässä alakohdassa x ei tällä kertaa tarvitse lukea artikkeleita kokonaan, ei tarvitse tiivistää niitä, eikä tehdä testejä koneella.
 
 - Selitä tuskan pyramidin idea 1-2 virkkeellä. Bianco 2013: [Pyramid of Pain](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html). (Katso eritoten pyramidin kuvaa.)
+  - Pyramidi esittää eri indikaattoreita, joilla voidaan havaita tunkeutujan toimintaa
+  - Jokainen askel ylemmäs on hyökkääjälle haitallisempi, sillä niitä on hankalampi hyökkääjän muuttaa
+
 - Selitä timanttimallin (Diamond Model) idea 1-2 virkkeellä. Tekijä esittelee sen aika juhlallisesti, voit myös etsiä yksinkertaisempia artikkeleita [hakukoneella](https://duckduckgo.com/?t=ftsa&q=diamond+model+attacker+capability+infrastructure&ia=web) tai kelata suoraan timantin kuvaan. Caltagirone et al 2013: [Diamond Model](https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf)
+  - Keskittyy tapahtuneen hyökkäksen analysointiin ja tarkasteluun, jotta voidaan päästä hyökkäyksen askelten jäljille.
+  - Timantin neljä kulmaa ovat yhteydessä toisiinsa, siten että voidaan avata mahdollisia polkuja hyökkäyksen takana.
+  - Kulmien väliset osuudet auttavat täyttämään tyhjiä aukkoja hallussa olevassa tiedossa ja tehostaa näin hyökkäyksen tutkimusta.
 
 #### a) Apache log. Asenna Apache-weppipalvelin paikalliselle virtuaalikoneellesi. Surffaa palvelimellesi salaamattomalla HTTP-yhteydellä, http://localhost . Etsi omaa sivulataustasi vastaava lokirivi. Analysoi yksi tällainen lokirivi, eli selitä sen kaikki kohdat. (Jos Apache ei ole kovin tuttu, voit tätä tehtävää varten vain asentaa sen ja testata oletusweppisivulla. Eli ei tarvitse tehdä omia kotisvuja tms.)
 
+- Asensin Teron ohjeiden mukaisesti Apache-webbipalvelimen ilman ongelmia.
+- Surffasin HTTP-yhteydellä `http://localhost` ja logasin apachella tuon liikenteen.
+
+![image](https://github.com/user-attachments/assets/738f1a74-a5cc-4f8a-a255-f5216ee70e07)
+
+- ChatGPT avustuksella ensimmäinen rivi:
+  - IP osoite 127.0.0.1, eli localhost
+  - Aika
+  - GET pyyntö kotisivusta
+  - Statuskoodi 200 (ok)
+  - 3380 on pyynnön koko 3380 tavua
+  - Käyttäjän tiedot Mozilla/5.0 Linuxilla
 
 
 #### b) Nmapped. Porttiskannaa oma weppipalvelimesi käyttäen localhost-osoitetta ja 'nmap -A' päällä. Selitä tulokset. (Pelkkä http-portti 80/tcp riittää)
@@ -44,4 +62,7 @@
 - https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
 - https://duckduckgo.com/?t=ftsa&q=diamond+model+attacker+capability+infrastructure&ia=web
 - https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
+- https://attack.mitre.org/
+- https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+- https://chatgpt.com/
 - 
