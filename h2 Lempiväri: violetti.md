@@ -45,8 +45,20 @@
   - Running: Linux 2.6.X|5.X
   - Käyttöjärjestelmän tietoja, sekä lopuksi verkon etäisyys (tässä 0 hops)
 
+
 #### d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
 
+- Kuvakaappaus Apachen logista `nmap -A 127.0.0.1` -komennon jälkeen
+
+![image](https://github.com/user-attachments/assets/bdad2739-0209-45ec-becb-fbc4503d773e)
+
+-  Logista löytyy todellakin monta nmap osumaa ja sinne mahtuu GET, POST pyyntöjen lisäksi OPTIONS, PROPFIND, IFUY, jotka kohdistuvat ilmeisesti eri polkuihin(?)
+-  Jotain virheellistä on myös pyydetty, sillä seasta löytyy 404 koodeja (helppo muistaa!)
+-  Logia voisi ainakin `grep` -komennolla seuloa hakemalla "nmap"
+-  Kysyin vielä ChatGPT:ltä ajatuksia tästä kuvankaappauksesta. Sain vastaukseksi pitkälti samoja mietteitä, mutta se osoitti pari hyvää huomiota:
+  - Osumien määrä hyvin lyhyessä ajassa samasta lähteestä on epäilyttävä ominaisuus.
+  - Epäilyttävät metodit "PROPFIND|OPTIONS|TRACE|TRACK"
+  - Epäilyttävät User-Agentit
 
 
 #### e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
