@@ -33,11 +33,16 @@
     - Vastaanoton taajuutta kannattaa säätää hieman sivuun siitä mitä Analyzer antoi, noin 20 - 100 kHz
     - Signaalin tallennuksessa on tärkeää kaapata vähintään 2 signaalin "burst":ia
     - Signaalin amplitude tulisi olla väh. 2x noise amplitudesta
-    - 
+
+  
    
 
 
 #### a) WebSDR. Etäkäytä WebSDR-ohjelmaradiota, joka on kaukana sinusta ja kuuntele radioliikennettä. Radioliikenne tulee siepata niin, että radiovastaanotin on joko eri maassa tai vähintään 400 km paikasta, jossa teet tätä tehtävää. Käytä esimerkkinä julkista, suurelle yleisölle tarkoitettua viestiä, esimerkiksi yleisradiolähetystä. Kerro löytämäsi taajuus, aallonpituus ja modulaatio. Kuvaile askeleet ja ota ruutukaappaus. (Tehtävässä ei saa ilmaista sellaisen viestin sisältöä tai olemassaoloa, joka ei ole tarkoitettu julkiseksi. Voit sen sijaan kuvailla, miten sait julkisen radiolähetyksen kuulumaan kaiuttimistasi. Julkisten, esimerkiksi yleisradiolähetysten sisältöä saa tietysti kuvailla.)
+
+![image](https://github.com/user-attachments/assets/d39798e2-7d95-4c90-a5f8-f94909f5e743)
+
+
 
 
 #### b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
@@ -72,4 +77,4 @@
 - https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
 - https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s
 - https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html
-- 
+- http://hackgreensdr.org:8902/
