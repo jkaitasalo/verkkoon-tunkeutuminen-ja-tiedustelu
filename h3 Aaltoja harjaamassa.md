@@ -42,8 +42,13 @@
 
 ![image](https://github.com/user-attachments/assets/d39798e2-7d95-4c90-a5f8-f94909f5e743)
 
+- Tässä WebSDR käyttöliittymässä löytyy kaikki haluamamme tieto:
+  - taajuus = 433176.50 kHz eli 433,1765 MHz
+  - aallonpituus = 70cm
+    - tämän voisi myös laskea: aallonpituus = valonnopeus / taajuus
+  - Modulaatio hieman leveämpi (12.09 kHz @ -6dB; 12.55 kHz @ -60dB) kuin FM (9.09 kHz @ -6dB; 9.55 kHz @ -60dB)
 
-
+- tämä kyseinen WebSDR oli yksi ensimmäisiä WebSDR osumia googlauksen jälkeen. Selasin muutamia sivuja ja tämä näytti mielenkiintoiselta. Asema sijaitsee Hack Greenissä, Chesiressä.
 
 #### b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
 
